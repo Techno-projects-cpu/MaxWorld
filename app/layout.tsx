@@ -5,6 +5,12 @@ import "./globals.css";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ??
+      (process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000")
+  ),
   title: {
     default:
       "Max World — CC Cameras, Systems & Laptop Sales & Service in Khammam",
@@ -62,6 +68,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
       <body>
+        <a className="skip-link" href="#main">Skip to content</a>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

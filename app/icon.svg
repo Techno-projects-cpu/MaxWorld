@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Max World">
+  <rect width="512" height="512" rx="112" fill="#0E0D0A"/>
+  <g transform="translate(91 108) scale(3.44)">
+    <path d="M10 74 V12 L25 74 L40 12 V74" fill="none" stroke="#E30613" stroke-width="12" stroke-linejoin="bevel" stroke-linecap="square"/>
+    <path d="M36 12 L50 74 L61 26 L72 74 L86 12" fill="none" stroke="#FAF9F6" stroke-width="12" stroke-linejoin="bevel" stroke-linecap="square"/>
+  </g>
+</svg>

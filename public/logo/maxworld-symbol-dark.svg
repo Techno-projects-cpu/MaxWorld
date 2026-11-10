@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 86" role="img" aria-label="Max World symbol">
+  <!-- Red "M" behind -->
+  <path d="M10 74 V12 L25 74 L40 12 V74" fill="none" stroke="#E30613" stroke-width="12" stroke-linejoin="bevel" stroke-linecap="square"/>
+  <!-- Paper-white "W" in front -->
+  <path d="M36 12 L50 74 L61 26 L72 74 L86 12" fill="none" stroke="#FAF9F6" stroke-width="12" stroke-linejoin="bevel" stroke-linecap="square"/>
+</svg>
