@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 /**
- * Max World logo lockup — the shop's real "MW" symbol (red + black/white)
- * paired with the two-tone wordmark. Uses the white-letter variant on dark.
+ * Max World logo lockup — the shop's real "MW" symbol (white + red, for the
+ * dark chrome) paired with the two-tone wordmark: red "Max", white "World".
  */
-export default function Logo({ dark = false }: { dark?: boolean }) {
+export default function Logo() {
   return (
     <span
       className="logo"
@@ -12,7 +12,7 @@ export default function Logo({ dark = false }: { dark?: boolean }) {
     >
       <Image
         className="logo-mark"
-        src={dark ? "/images/symbol-dark.png" : "/images/symbol.png"}
+        src="/images/symbol-dark.png"
         alt=""
         width={250}
         height={250}

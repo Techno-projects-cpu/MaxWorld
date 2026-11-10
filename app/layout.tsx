@@ -1,4 +1,6 @@
 import type { Metadata, Viewport } from "next";
+import "@fontsource-variable/space-grotesk";
+import "@fontsource-variable/inter";
 import "./globals.css";
 import { site } from "@/lib/site";
 
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#16150f",
+  themeColor: "#0e0d0a",
 };
 
 const jsonLd = {
