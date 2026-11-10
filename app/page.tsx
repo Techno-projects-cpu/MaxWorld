@@ -156,6 +156,40 @@ const STATS = [
   { index: "04", value: "1-Stop", label: "Cameras, complete systems & laptop service" },
 ];
 
+
+const CATALOG = [
+  {
+    name: "CP Plus dome camera — 2MP, night vision",
+    note: "Indoor · phone viewing",
+    ask: "the CP Plus 2MP dome camera",
+  },
+  {
+    name: "Hikvision 4MP full-color camera",
+    note: "Outdoor · colour night vision",
+    ask: "the Hikvision 4MP full-color camera",
+  },
+  {
+    name: "4-channel DVR setup bundle",
+    note: "Cameras + DVR + HDD · installed & configured",
+    ask: "the 4-channel DVR bundle",
+  },
+  {
+    name: "Surveillance hard drive — 24/7 rated",
+    note: "1TB & 2TB · backup configuration included",
+    ask: "a surveillance hard drive",
+  },
+  {
+    name: "Laptops — student & office range",
+    note: "This month's deals live at the counter",
+    ask: "this month's laptop deals",
+  },
+  {
+    name: "Laptop service — screen, keyboard, SSD",
+    note: "Repairs & upgrades · honest diagnosis first",
+    ask: "laptop service / repair",
+  },
+];
+
 const MARQUEE = [...site.brands, ...site.brands, ...site.brands];
 
 const WA_DEFAULT = whatsappLink(
@@ -186,6 +220,7 @@ export default function Home() {
           <nav aria-label="Primary">
             <ul className="nav-links">
               <li><a href="#products">Products</a></li>
+              <li><a href="#catalog">Catalog</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#faq">FAQ</a></li>
@@ -198,7 +233,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main>
+      <main id="main">
         {/* ======= HERO ======= */}
         <section className="hero" aria-label="Max World — Khammam's security and tech store">
           <div className="container hero-grid">
@@ -319,6 +354,47 @@ export default function Home() {
           </div>
         </section>
 
+
+        {/* ======= CATALOG ======= */}
+        <section id="catalog" className="section catalog-section">
+          <div className="container">
+            <div className="section-head">
+              <div>
+                <p className="eyebrow">On the rack this week</p>
+                <h2>Ask for<br />today's price.</h2>
+              </div>
+              <p>
+                Prices move with brand offers — WhatsApp Shaik Eliyas for
+                today's real quote, held for you at the counter.
+              </p>
+            </div>
+            <div className="catalog-list">
+              {CATALOG.map((item, i) => (
+                <a
+                  key={item.name}
+                  className="catalog-row"
+                  href={whatsappLink(`Hello Max World! I'm interested in ${item.ask}. What's today's best price?`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Ask on WhatsApp about ${item.name}`}
+                >
+                  <span className="catalog-index">/ {String(i + 1).padStart(2, "0")}</span>
+                  <span className="catalog-name">
+                    {item.name}
+                    <small>{item.note}</small>
+                  </span>
+                  <span className="catalog-arrow">
+                    <Icon d={ICONS.arrowUpRight} size={18} />
+                  </span>
+                </a>
+              ))}
+            </div>
+            <p className="catalog-foot">
+              Prices &amp; stock change daily — the shop quotes the real number, not a website estimate.
+            </p>
+          </div>
+        </section>
+
         {/* ======= SERVICES (dark) ======= */}
         <section id="services" className="section dark">
           <div className="container">
@@ -392,6 +468,38 @@ export default function Home() {
                 ))}
               </div>
             </div>
+          </div>
+        </section>
+
+
+        {/* ======= GOOGLE REVIEWS ======= */}
+        <section className="reviews" aria-label="Max World on Google">
+          <div className="container reviews-inner">
+            <div>
+              <div className="reviews-stars" aria-hidden="true">
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <svg key={i} width="26" height="26" viewBox="0 0 24 24" fill="#E30613" aria-hidden="true">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="reviews-big">
+                Read what <em>Khammam</em><br />says about us.
+              </p>
+              <p className="reviews-sub">
+                Reviews from our real customers live on our Google listing —
+                read them before you visit, or leave yours after your first service.
+              </p>
+            </div>
+            <a
+              className="btn btn-dark btn-lg reviews-cta"
+              href={site.mapsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See our Google reviews
+              <Icon d={ICONS.arrowUpRight} size={18} />
+            </a>
           </div>
         </section>
 

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 345 96" role="img" aria-label="Max World — CC cameras, systems and laptop sales & service, Khammam">
+  <g transform="translate(2,4) scale(0.98)">
+    <path d="M10 74 V12 L25 74 L40 12 V74" fill="none" stroke="#E30613" stroke-width="12" stroke-linejoin="bevel" stroke-linecap="square"/>
+    <path d="M36 12 L50 74 L61 26 L72 74 L86 12" fill="none" stroke="#FAF9F6" stroke-width="12" stroke-linejoin="bevel" stroke-linecap="square"/>
+  </g>
+  <text x="118" y="46" font-family="'Arial Black','Archivo Black',Arial,Helvetica,sans-serif" font-weight="900" font-size="34" letter-spacing="-1"><tspan fill="#E30613">Max</tspan><tspan fill="#FAF9F6" dx="10">World</tspan></text>
+  <text x="118" y="70" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="8.6" letter-spacing="2.6" fill="#A3A195">CC CAMERAS · SYSTEMS · LAPTOPS</text>
+</svg>
