@@ -4,12 +4,11 @@ import { useState } from "react";
 import { site, whatsappLink } from "@/lib/site";
 
 const REQUIREMENTS = [
-  "CCTV / security camera setup",
-  "DVR / NVR kit + storage",
-  "AMC / maintenance plan",
-  "Repair or service",
-  "Smart home gadgets",
-  "Laptops / mobiles / accessories",
+  "CC camera / security setup",
+  "Complete CCTV system (DVR/NVR)",
+  "Laptop sales enquiry",
+  "Laptop repair & service",
+  "Surveillance storage / HDD",
   "Something else",
 ] as const;
 
@@ -21,7 +20,7 @@ export default function LeadForm() {
   const [error, setError] = useState("");
 
   const buildMessage = () =>
-    `Hello MaxWorld! \n\nName: ${name.trim()}\nPhone: ${phone.trim()}\nRequirement: ${requirement}${
+    `Hello Max World! \n\nName: ${name.trim()}\nPhone: ${phone.trim()}\nRequirement: ${requirement}${
       details.trim() ? `\nDetails: ${details.trim()}` : ""
     }`;
 
@@ -110,7 +109,7 @@ export default function LeadForm() {
           <textarea
             id="lead-details"
             name="details"
-            placeholder="e.g. 4 cameras for my shop on MG Road, want night vision + phone viewing app…"
+            placeholder="e.g. 4 cameras for my shop near Ek Minar Masjid, night vision + phone viewing…"
             value={details}
             onChange={(e) => setDetails(e.target.value)}
           />

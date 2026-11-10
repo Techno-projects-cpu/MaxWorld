@@ -11,9 +11,10 @@
   --muted: #63625a;
   --line: #e7e5de;
   --line-strong: #d8d5cc;
-  --accent: #c2410c;
-  --accent-hover: #9a3412;
-  --accent-soft: #fdf0e7;
+  --brand: #e30613;
+  --accent: #e30613;
+  --accent-hover: #a8000e;
+  --accent-soft: #fdecec;
   --dark: #16150f;
   --dark-soft: #22211a;
   --dark-line: #33322a;
@@ -138,17 +139,21 @@ body {
   color: var(--ink);
 }
 .logo-mark {
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   flex: 0 0 auto;
 }
 .logo-word {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.35rem;
-  letter-spacing: -0.04em;
+  font-size: 1.32rem;
+  letter-spacing: -0.03em;
   line-height: 1;
+  white-space: nowrap;
 }
+.wm-max { color: var(--brand); }
+.wm-world { color: var(--ink); }
+.footer .wm-world { color: #faf9f6; }
 .logo-word small {
   display: block;
   font-family: var(--font-mono);
@@ -1100,6 +1105,37 @@ body {
 }
 .wa-fab:hover {
   transform: scale(1.08);
+}
+
+/* ============ SOCIAL ICONS ============ */
+.social-row {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.2rem;
+}
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--dark-line);
+  color: #d8d6cb;
+  transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+.social-btn:hover {
+  color: #fff;
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+.contact-item .ig-link {
+  color: #fafaf7;
+  text-decoration: none;
+  font-weight: 600;
+}
+.contact-item .ig-link:hover {
+  text-decoration: underline;
 }
 
 :focus-visible {

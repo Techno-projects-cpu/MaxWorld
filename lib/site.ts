@@ -1,65 +1,48 @@
 /**
- * MAXWORLD — Business details
- * ---------------------------
- * SINGLE SOURCE OF TRUTH for every phone number, address, hour and claim
- * shown on the site. Anything marked PLACEHOLDER is a stand-in until the
- * real details arrive from Shaik Eliyas — edit here and the whole site updates.
+ * MAX WORLD — Business details (REAL, provided by Shaik Eliyas on 10 Nov 2026)
+ * Everything shown on the site reads from this file — edit here, site updates.
  */
 
 export const site = {
-  name: "MaxWorld",
-  tagline: "Khammam's Security & Tech Store",
+  name: "Max World",
+  tagline: "CC Cameras · Systems · Laptops — Sales & Service",
   owner: "Shaik Eliyas",
   city: "Khammam",
   region: "Telangana",
   country: "India",
 
-  // PLACEHOLDER — replace with the real shop number
-  phoneDisplay: "+91 98765 43210",
-  phoneHref: "tel:+919876543210",
-  // PLACEHOLDER — WhatsApp number in international format, no + or spaces
-  whatsappNumber: "919876543210",
-  // PLACEHOLDER — replace with the real business Gmail
-  email: "maxworld.kmm@gmail.com",
+  phoneDisplay: "+91 76619 72758",
+  phoneHref: "tel:+917661972758",
+  whatsappNumber: "917661972758",
+  email: "maxworld873@gmail.com",
 
-  // PLACEHOLDER — replace with the exact shop address
-  addressLines: ["MG Road Main Market", "Khammam, Telangana 507001"],
-  // Google Maps embed for the shop area (no API key needed)
-  mapsEmbed: "https://www.google.com/maps?q=Khammam%2C%20Telangana%2C%20India&output=embed",
-  mapsLink: "https://www.google.com/maps/search/Khammam+Telangana+India",
-
-  hours: [
-    { days: "Monday – Saturday", time: "9:30 AM – 8:30 PM" },
-    { days: "Sunday", time: "10:30 AM – 6:30 PM" },
+  addressLines: [
+    "Indera Nagar, near Ek Minar Masjid",
+    "Khammam, Telangana",
   ],
+  // Click-through: the owner's own Google Maps shortlink
+  mapsLink: "https://maps.app.goo.gl/pogo7yg48c9ZkG4e7",
+  // Embed centered on Ek Minar Masjid, Indera Nagar
+  mapsEmbed:
+    "https://www.google.com/maps?q=Ek%20Minar%20Masjid%2C%20Indera%20Nagar%2C%20Khammam%2C%20Telangana&output=embed",
+
+  hours: [{ days: "Open daily", time: "10:00 AM – 8:00 PM" }],
 
   socials: {
-    // PLACEHOLDER — add real URLs when available, they show up in the footer
-    instagram: "",
+    instagram: "https://www.instagram.com/_max_world_mw/",
+    instagramHandle: "@_max_world_mw",
     facebook: "",
     youtube: "",
   },
 
-  // PLACEHOLDER — store-performance numbers, replace with real ones
   stats: [
-    { value: "12+", label: "Years in Khammam" },
-    { value: "2,400+", label: "Cameras installed" },
-    { value: "900+", label: "Happy customers" },
-    { value: "24 hr", label: "Quote turnaround" },
+    { value: "4", label: "CCTV brands stocked — CP Plus, Hikvision, Dahua, Prama" },
+    { value: "10–8", label: "Open every single day, weekends included" },
+    { value: "Free", label: "Site survey & quote across Khammam" },
+    { value: "1-Stop", label: "Cameras, complete systems & laptop service" },
   ],
 
-  brands: [
-    "Hikvision",
-    "CP Plus",
-    "Dahua",
-    "EZVIZ",
-    "TP-Link",
-    "Samsung",
-    "HP",
-    "Dell",
-    "Lenovo",
-    "Mi",
-  ],
+  brands: ["CP Plus", "Hikvision", "Dahua", "Prama"],
 } as const;
 
 export const telLink = site.phoneHref;

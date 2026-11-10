@@ -23,12 +23,14 @@ const ICONS = {
   camera:
     '<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/>',
   dvr: '<rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 12h.01M10 12h.01M14 12h6"/>',
-  home: '<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><circle cx="12" cy="13.5" r="1.6"/><path d="M12 15.1V18"/>',
-  wifi: '<path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><path d="M12 20h.01"/>',
   laptop:
     '<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/><path d="M9 20l1-2h4l1 2"/>',
-  phone:
-    '<rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18.5h2"/>',
+  wrench:
+    '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>',
+  harddrive:
+    '<path d="M22 12H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><path d="M6 16h.01M10 16h.01"/>',
+  plug:
+    '<path d="M9 2v6M15 2v6"/><path d="M7 8h10v4a5 5 0 0 1-10 0V8z"/><path d="M12 17v5"/>',
   check: '<path d="M20 6 9 17l-5-5"/>',
   phoneCall:
     '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 11.91a16 16 0 0 0 6 6l3.27-1.27a2 2 0 0 1 2.11.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>',
@@ -38,42 +40,41 @@ const ICONS = {
   clock:
     '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
   plus: '<path d="M12 5v14M5 12h14"/>',
-  shield:
-    '<path d="M12 22s8-3.6 8-10V5l-8-3-8 3v7c0 6.4 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>',
   arrowRight: '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>',
-  star: '<path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/>',
+  instagram:
+    '<rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><path d="M17.8 6.2h.01"/>',
 };
 
 const PRODUCTS = [
   {
     icon: ICONS.camera,
-    title: "CCTV Cameras",
-    desc: "Dome, bullet, PTZ and wireless indoor/outdoor cameras — 2MP to 4K night vision, mobile viewing apps included.",
+    title: "CC Cameras",
+    desc: "Dome, bullet and PTZ cameras for homes, shops and offices — CP Plus, Hikvision, Dahua and Prama, with night vision and phone viewing.",
   },
   {
     icon: ICONS.dvr,
-    title: "DVR · NVR & Storage",
-    desc: "Complete kits with surveillance hard drives, pre-configured channels and remote viewing on your phone.",
-  },
-  {
-    icon: ICONS.home,
-    title: "Smart Home",
-    desc: "Video doorbells, smart locks, Wi-Fi switches, motion sensors and complete home automation setups.",
-  },
-  {
-    icon: ICONS.wifi,
-    title: "Networking & Wi-Fi",
-    desc: "Routers, mesh Wi-Fi, switches, structured cabling and full shop/office network wiring.",
+    title: "CCTV Systems",
+    desc: "Complete DVR/NVR kits with surveillance storage, cabling and configuration — pick your camera count, we handle the rest.",
   },
   {
     icon: ICONS.laptop,
-    title: "Laptops & Computing",
-    desc: "HP, Dell, Lenovo and more — laptops, desktops, printers, cartridges and genuine accessories.",
+    title: "Laptop Sales",
+    desc: "Genuine laptops at honest Khammam prices — billed properly, with manufacturer warranty, from a shop that will be here after the sale.",
   },
   {
-    icon: ICONS.phone,
-    title: "Mobile & Everyday Tech",
-    desc: "Smartphones, power banks, earphones, smartwatches and the small tech that keeps you running.",
+    icon: ICONS.wrench,
+    title: "Laptop Service & Repair",
+    desc: "Screen, keyboard, battery and charging-port replacement, RAM/SSD upgrades, OS installation and software fixes.",
+  },
+  {
+    icon: ICONS.harddrive,
+    title: "Surveillance Storage",
+    desc: "Surveillance-grade hard drives and backup configuration — so your footage is there when you actually need it.",
+  },
+  {
+    icon: ICONS.plug,
+    title: "Camera Accessories",
+    desc: "Cables, adapters, mounts, connectors and everything installation day needs — genuine parts, fair prices.",
   },
 ];
 
@@ -81,50 +82,50 @@ const SERVICES = [
   {
     num: "01",
     title: "Free site survey & quote",
-    desc: "We visit your home, shop or office in Khammam, map the right camera spots and hand you a clear, written quote. No advance, no obligation.",
+    desc: "We visit your home, shop or office in Khammam, map the right camera positions and hand you a clear, written quote. No advance, no obligation.",
   },
   {
     num: "02",
-    title: "Professional installation",
-    desc: "Clean cabling, proper mounting, DVR/NVR configuration and the viewing app set up on your phone — done in a day, backed by warranty.",
+    title: "Installation & setup",
+    desc: "Cameras mounted, DVR/NVR configured, remote viewing set up on your phone — installed by our own technicians, bundled into your quote.",
   },
   {
     num: "03",
-    title: "AMC & maintenance",
-    desc: "Annual maintenance contracts — camera cleaning, focus & firmware checks, storage health and priority service visits.",
+    title: "Laptop sales & service",
+    desc: "New laptops with proper billing, plus honest repair and upgrade work — diagnosed transparently, fixed right the first time.",
   },
   {
     num: "04",
-    title: "Repairs & upgrades",
-    desc: "Dead cameras, DVR faults, power issues, HDD failures — diagnosed and fixed honestly, or upgraded when repair doesn't make sense.",
+    title: "After-sales support",
+    desc: "Bought your CCTV or laptop from us? Call the same number for help — we service what we sell and we stand by it.",
   },
 ];
 
 const FAQS = [
   {
-    q: "Which CCTV brands do you stock?",
-    a: "Hikvision, CP Plus, Dahua, EZVIZ and more — every unit sold at MaxWorld is genuine, billed with GST invoice and covered by manufacturer warranty.",
+    q: "Which camera brands do you stock?",
+    a: "CP Plus, Hikvision, Dahua and Prama — genuine stock, billed properly and covered by manufacturer warranty.",
   },
   {
-    q: "Do you provide installation with the cameras?",
-    a: "Yes. Installation by our own technicians is included in every CCTV purchase — neat cabling, DVR/NVR setup and the mobile app configured before we leave.",
+    q: "Do you install the cameras you sell?",
+    a: "Yes — our own technicians install everything we sell: mounting, DVR/NVR setup, cabling and the phone-viewing app. Ask for a bundled camera + installation quote.",
   },
   {
-    q: "Can I watch my shop cameras from my phone?",
-    a: "Absolutely. We configure remote viewing on Android and iPhone during installation, and we'll happily help you set it up again anytime.",
+    q: "Can I watch my cameras from my phone?",
+    a: "Absolutely. We configure remote viewing on Android and iPhone during setup — and if you ever get stuck, one call to the shop and we'll walk you through it.",
   },
   {
-    q: "Do you visit for a site survey before I buy?",
-    a: "Yes — free of charge anywhere in Khammam town and nearby areas. You get an honest recommendation on how many cameras you actually need, not the maximum.",
+    q: "Do you repair laptops too?",
+    a: "Yes. Screen, keyboard, battery and charging-port replacement, RAM and SSD upgrades, OS installation, formatting and software fixes — quick and honest work for Khammam customers.",
   },
   {
-    q: "What if a camera stops working after the warranty?",
-    a: "Bring it in or call us. We diagnose it for a transparent fee and repair what's repairable. MaxWorld customers always get service priority.",
+    q: "Will you visit for a survey before I buy?",
+    a: "Yes — free of charge anywhere in Khammam. You'll get an honest recommendation on how many cameras you actually need, not the maximum.",
   },
 ];
 
 const WA_DEFAULT = whatsappLink(
-  "Hello MaxWorld! I'd like to know more about your CCTV and tech products."
+  "Hello Max World! I'd like to know more about your CC cameras, systems and laptop service."
 );
 
 export default function Home() {
@@ -134,11 +135,9 @@ export default function Home() {
       <div className="topbar">
         <div className="container">
           <span>
-            <span className="dot">●</span>&nbsp; Serving Khammam, Telangana
+            <span className="dot">●</span>&nbsp; Indera Nagar, Khammam
           </span>
-          <span className="hide-sm">
-            {site.hours[0].days}: {site.hours[0].time}
-          </span>
+          <span className="hide-sm">Open daily · 10:00 AM – 8:00 PM</span>
           <a href={telLink}>{site.phoneDisplay}</a>
         </div>
       </div>
@@ -146,7 +145,7 @@ export default function Home() {
       {/* ======= NAV ======= */}
       <header className="nav">
         <div className="container">
-          <a href="#" aria-label="MaxWorld — home">
+          <a href="#" aria-label="Max World — home">
             <Logo />
           </a>
           <nav aria-label="Primary">
@@ -171,7 +170,7 @@ export default function Home() {
             <div>
               <span className="hero-badge">
                 <span className="rec-dot" aria-hidden="true" />
-                CCTV · Smart Home · Tech — Khammam
+                CC Cameras · Systems · Laptops
               </span>
               <h1>
                 See everything.
@@ -179,10 +178,10 @@ export default function Home() {
                 <em>Miss nothing.</em>
               </h1>
               <p className="hero-sub">
-                <strong>MaxWorld</strong> is Khammam's security &amp; tech store —
-                genuine <strong>CCTV cameras, DVR/NVR kits, smart-home and
-                everyday tech</strong>, professionally installed and honestly
-                serviced by owner <strong>Shaik Eliyas</strong> and team.
+                <strong>Max World</strong> is Khammam's CCTV &amp; laptop service
+                store — genuine <strong>CP Plus, Hikvision, Dahua and Prama</strong>{" "}
+                cameras, complete systems, and laptop sales &amp; service, owned
+                and run by <strong>Shaik Eliyas</strong> in Indera Nagar.
               </p>
               <div className="hero-ctas">
                 <a href="#quote" className="btn btn-primary">
@@ -197,8 +196,8 @@ export default function Home() {
               <div className="hero-trust">
                 {[
                   "Free site survey",
-                  "GST bill & warranty",
-                  "Service after sale",
+                  "Bill & manufacturer warranty",
+                  "After-sales service",
                 ].map((t) => (
                   <span key={t}>
                     <Icon d={ICONS.check} size={15} />
@@ -208,7 +207,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="hero-visual" aria-hidden="false">
+            <div className="hero-visual">
               <div className="hero-card">
                 <div className="frame">
                   <span className="rec-tag">
@@ -217,7 +216,7 @@ export default function Home() {
                   </span>
                   <Image
                     src="/images/hero-camera.png"
-                    alt="Dome CCTV security camera — one of MaxWorld's bestselling indoor/outdoor cameras"
+                    alt="Dome CCTV security camera — a bestseller at the Max World shop"
                     fill
                     priority
                     sizes="(max-width: 900px) 100vw, 440px"
@@ -227,7 +226,7 @@ export default function Home() {
                 <div className="caption">
                   <div>
                     <p className="caption-title">4MP Dome Camera · Night Vision</p>
-                    <p className="caption-sub">Bestseller — in stock</p>
+                    <p className="caption-sub">CP Plus · Hikvision · Dahua · Prama</p>
                   </div>
                   <span className="in-stock">
                     <Icon d={ICONS.check} size={12} />
@@ -237,12 +236,14 @@ export default function Home() {
               </div>
 
               <div className="float-chip one" aria-hidden="true">
-                <div className="fc-big">2,400+</div>
-                <div className="fc-small">cameras installed across Khammam</div>
+                <div className="fc-big">4</div>
+                <div className="fc-small">
+                  trusted brands — CP Plus, Hikvision, Dahua, Prama
+                </div>
               </div>
               <div className="float-chip two" aria-hidden="true">
                 <div className="fc-big">Free</div>
-                <div className="fc-small">survey &amp; quote at your shop or home</div>
+                <div className="fc-small">survey &amp; quote at your home, shop or office</div>
               </div>
             </div>
           </div>
@@ -261,7 +262,7 @@ export default function Home() {
         </section>
 
         {/* ======= STATS ======= */}
-        <section className="stats" aria-label="MaxWorld in numbers">
+        <section className="stats" aria-label="About Max World">
           <div className="container">
             {site.stats.map((s) => (
               <div className="stat" key={s.label}>
@@ -277,12 +278,12 @@ export default function Home() {
           <div className="container">
             <div className="section-head">
               <div>
-                <p className="eyebrow">What we sell</p>
-                <h2>Security first.<br />Tech for everything else.</h2>
+                <p className="eyebrow">What we sell &amp; service</p>
+                <h2>Security first.<br />Laptops covered too.</h2>
               </div>
               <p>
-                From one dome camera for your shop to a 32-channel office setup —
-                plus the everyday tech Khammam runs on.
+                From one dome camera for your shop to a full office system —
+                and the laptops Khammam works on.
               </p>
             </div>
             <div className="product-grid">
@@ -331,14 +332,14 @@ export default function Home() {
               <figure className="tech-figure">
                 <Image
                   src="/images/technician.png"
-                  alt="MaxWorld technician installing a dome CCTV camera at a storefront in Khammam"
+                  alt="Max World technician installing a dome CCTV camera at a shop in Khammam"
                   width={760}
                   height={874}
                   style={{ objectFit: "cover" }}
                 />
                 <figcaption className="tech-caption">
-                  <strong>Our own technicians.</strong> Never outsourced — every
-                  installation is done and guaranteed by MaxWorld.
+                  <strong>Indera Nagar, near Ek Minar Masjid.</strong> Walk in
+                  any day, 10 AM to 8 PM — or call and we'll come to you.
                 </figcaption>
               </figure>
             </div>
@@ -350,7 +351,7 @@ export default function Home() {
           <div className="container">
             <div className="why-wrap">
               <div>
-                <p className="eyebrow">Why MaxWorld</p>
+                <p className="eyebrow">Why Max World</p>
                 <p className="why-quote" style={{ marginTop: "1rem" }}>
                   “Buy the camera you need, not the one with the biggest margin.{" "}
                   <em>That's the only way a local shop survives.</em>”
@@ -360,7 +361,7 @@ export default function Home() {
                   <span>
                     <span className="why-attr-name">{site.owner}</span>
                     <br />
-                    <span className="why-attr-role">Owner, MaxWorld — Khammam</span>
+                    <span className="why-attr-role">Owner, Max World — Indera Nagar, Khammam</span>
                   </span>
                 </div>
               </div>
@@ -368,19 +369,19 @@ export default function Home() {
                 {[
                   {
                     t: "Honest, need-based advice",
-                    d: "We recommend what actually covers your space — most shops need 4 cameras, not 12.",
+                    d: "We recommend what actually covers your space — most shops are fine with 4 cameras, not 12.",
                   },
                   {
-                    t: "Genuine products, GST invoice",
-                    d: "Every sale is a proper bill with manufacturer warranty — never grey-market stock.",
+                    t: "Genuine products, proper bill",
+                    d: "CP Plus, Hikvision, Dahua and Prama — every sale billed with manufacturer warranty, never grey-market stock.",
+                  },
+                  {
+                    t: "Sales & service under one roof",
+                    d: "Cameras and laptops — buy it here, and we're the same number you call for support after it.",
                   },
                   {
                     t: "Local, reachable, accountable",
                     d: "One phone call and we're at your doorstep — no call centres, no ticket numbers.",
-                  },
-                  {
-                    t: "Fair pricing for Khammam",
-                    d: "City pricing without city overheads — and we match any genuine local quote.",
                   },
                 ].map((v) => (
                   <div className="value-item" key={v.t}>
@@ -407,8 +408,8 @@ export default function Home() {
                 <h2>Visit the shop,<br />or just ping us.</h2>
               </div>
               <p>
-                Walk in for a demo, call for a quote, or WhatsApp us your
-                requirement — we reply fast.
+                Walk in to Ek Minar Masjid, Indera Nagar for a demo, call for a
+                quote, or WhatsApp your requirement.
               </p>
             </div>
 
@@ -416,7 +417,7 @@ export default function Home() {
               {/* Contact panel */}
               <aside className="contact-panel" aria-label="Contact details">
                 <div>
-                  <h3>MaxWorld</h3>
+                  <h3>Max World</h3>
                   <p style={{ fontSize: "0.82rem", color: "#a8a698", marginTop: "0.3rem" }}>
                     {site.tagline}
                   </p>
@@ -450,6 +451,16 @@ export default function Home() {
                   </span>
                 </div>
 
+                <div className="contact-item">
+                  <Icon d={ICONS.instagram} size={19} />
+                  <span>
+                    <span className="ci-label">Instagram</span>
+                    <a className="ig-link" href={site.socials.instagram} target="_blank" rel="noopener noreferrer">
+                      {site.socials.instagramHandle}
+                    </a>
+                  </span>
+                </div>
+
                 <div className="hours-table" aria-label="Business hours">
                   {site.hours.map((h) => (
                     <div className="hours-row" key={h.days}>
@@ -462,7 +473,7 @@ export default function Home() {
                 <div className="map-frame">
                   <iframe
                     src={site.mapsEmbed}
-                    title="MaxWorld store location — Khammam, Telangana"
+                    title="Max World shop location — near Ek Minar Masjid, Indera Nagar, Khammam"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   />
@@ -506,17 +517,37 @@ export default function Home() {
             <div>
               <Logo dark />
               <p style={{ marginTop: "0.9rem", maxWidth: "24rem" }}>
-                Khammam's home for CCTV security, smart home and everyday tech —
-                owned and run by Shaik Eliyas. Genuine products, honest advice,
-                real after-sales support.
+                Khammam's home for CC cameras and laptop service — owned and
+                run by Shaik Eliyas. Genuine products, honest advice, real
+                after-sales support.
               </p>
+              <div className="social-row">
+                <a
+                  className="social-btn"
+                  href={site.socials.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Max World on Instagram"
+                >
+                  <Icon d={ICONS.instagram} size={18} />
+                </a>
+                <a
+                  className="social-btn"
+                  href={WA_DEFAULT}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Chat on WhatsApp"
+                >
+                  <WhatsAppIcon size={17} />
+                </a>
+              </div>
             </div>
             <nav aria-label="Footer">
               <h4>Explore</h4>
               <ul>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#services">Services &amp; AMC</a></li>
-                <li><a href="#about">About MaxWorld</a></li>
+                <li><a href="#products">Products &amp; brands</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Max World</a></li>
                 <li><a href="#quote">Get a quote</a></li>
                 <li><a href="#faq">FAQ</a></li>
               </ul>
@@ -526,13 +557,17 @@ export default function Home() {
               <ul>
                 <li><a href={telLink}>{site.phoneDisplay}</a></li>
                 <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
-                <li>{site.addressLines[0]}, Khammam, Telangana 507001</li>
+                <li>
+                  Indera Nagar, near Ek Minar Masjid,<br />
+                  Khammam, Telangana
+                </li>
+                <li>Open daily · 10 AM – 8 PM</li>
               </ul>
             </div>
           </div>
           <div className="footer-bottom">
-            <span>© 2026 MaxWorld · Khammam, Telangana</span>
-            <span>Genuine brands · GST invoice · Local service</span>
+            <span>© 2026 Max World · Khammam, Telangana</span>
+            <span>CP Plus · Hikvision · Dahua · Prama</span>
           </div>
         </div>
       </footer>
@@ -543,7 +578,7 @@ export default function Home() {
         href={WA_DEFAULT}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat with MaxWorld on WhatsApp"
+        aria-label="Chat with Max World on WhatsApp"
       >
         <WhatsAppIcon size={28} />
       </a>

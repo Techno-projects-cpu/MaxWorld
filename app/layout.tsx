@@ -3,26 +3,30 @@ import "./globals.css";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://maxworldkmm.in"), // PLACEHOLDER — real domain when live
   title: {
-    default: "MaxWorld — CCTV Cameras & Tech Store in Khammam | Shaik Eliyas",
-    template: "%s | MaxWorld Khammam",
+    default:
+      "Max World — CC Cameras, Systems & Laptop Sales & Service in Khammam",
+    template: "%s | Max World Khammam",
   },
   description:
-    "MaxWorld is Khammam's trusted security & tech store. CCTV cameras, DVR/NVR kits, smart-home gadgets, networking, laptops and mobile accessories — genuine brands, professional installation and honest after-sales service. Owned by Shaik Eliyas.",
+    "Max World, Indera Nagar (near Ek Minar Masjid), Khammam — genuine CP Plus, Hikvision, Dahua and Prama CCTV cameras, complete DVR/NVR systems and laptop sales & service. Owned by Shaik Eliyas. Open daily 10 AM – 8 PM.",
   keywords: [
+    "CC camera Khammam",
     "CCTV camera Khammam",
-    "security camera Khammam",
     "CCTV installation Khammam",
-    "DVR NVR kit Khammam",
-    "smart home Khammam",
-    "electronics store Khammam",
-    "MaxWorld",
+    "CP Plus dealer Khammam",
+    "Hikvision Khammam",
+    "Dahua Khammam",
+    "Prama Khammam",
+    "laptop service Khammam",
+    "laptop sales Khammam",
+    "Indera Nagar Khammam",
+    "Max World Khammam",
   ],
   openGraph: {
-    title: "MaxWorld — Khammam's Security & Tech Store",
+    title: "Max World — CC Cameras, Systems & Laptop Sales & Service, Khammam",
     description:
-      "CCTV cameras, smart home and everyday tech in Khammam — sold, installed and serviced by Shaik Eliyas & team.",
+      "Genuine CP Plus, Hikvision, Dahua and Prama CCTV — sales, complete systems and laptop service. Indera Nagar, near Ek Minar Masjid, Khammam. Open daily 10 AM – 8 PM.",
     type: "website",
     locale: "en_IN",
   },
@@ -35,21 +39,21 @@ export const viewport: Viewport = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ElectronicsStore",
-  name: "MaxWorld",
+  name: "Max World",
   description:
-    "CCTV cameras, DVR/NVR kits, smart home and everyday tech — sales, installation and service in Khammam, Telangana.",
+    "CC cameras, complete CCTV systems and laptop sales & service in Khammam, Telangana.",
   founder: site.owner,
   address: {
     "@type": "PostalAddress",
-    streetAddress: site.addressLines[0],
+    streetAddress: "Indera Nagar, near Ek Minar Masjid",
     addressLocality: "Khammam",
     addressRegion: "Telangana",
-    postalCode: "507001",
     addressCountry: "IN",
   },
-  telephone: site.phoneDisplay,
+  telephone: "+91 76619 72758",
   email: site.email,
-  openingHours: ["Mo-Sa 09:30-20:30", "Su 10:30-18:30"],
+  openingHours: "Mo-Su 10:00-20:00",
+  sameAs: ["https://www.instagram.com/_max_world_mw/"],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
